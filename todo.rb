@@ -5,20 +5,20 @@
 class Todo < Formula
   desc "Simple CLI to format todos"
   homepage "https://github.com/alexraskin/todo-cli"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.2/todo-cli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "44358fe52ad56c9339caa94d444d1affa434ded8525a26902094bd48c15cf10d"
+      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.3/todo-cli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "f8957c61d42dc065ea13148d0273f747aeea22e015cd374e6bc9b1d513dfd905"
 
       define_method(:install) do
         bin.install "todo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.2/todo-cli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "1b7ef8406fbc38bf5a2ff216e91967e418090b99a659698afabf775e08143be2"
+      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.3/todo-cli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "25876776eae0194465eb69cbd5d99899058cd8845101d096d242901536e18afa"
 
       define_method(:install) do
         bin.install "todo"
@@ -28,15 +28,15 @@ class Todo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.2/todo-cli_0.1.2_linux_amd64.tar.gz"
-      sha256 "8e44e0a99d6706ba9e8adf16c4fbf838659833fbe1352f1fc5c6be0d1769c195"
+      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.3/todo-cli_0.1.3_linux_amd64.tar.gz"
+      sha256 "c6513dc463cb1a6d1811669d9efd154cd9ba55f8a2d94c974d474376b068bd78"
       define_method(:install) do
         bin.install "todo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.2/todo-cli_0.1.2_linux_arm64.tar.gz"
-      sha256 "bd533556eecc814664fe69b425ecdaa88067dfe2c261f8bcb8c155b432853013"
+      url "https://github.com/alexraskin/todo-cli/releases/download/v0.1.3/todo-cli_0.1.3_linux_arm64.tar.gz"
+      sha256 "bb0b07d198c4ff8f42d5bf3ab750978bd4361ca71ab7f513e74c61d20c4409ce"
       define_method(:install) do
         bin.install "todo"
       end
