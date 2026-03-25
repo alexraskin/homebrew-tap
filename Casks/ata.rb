@@ -3,7 +3,7 @@ cask "ata" do
   name "ata"
   desc "Ask the Terminal Anything — chat with Claude from your terminal"
   homepage "https://github.com/alexraskin/ata"
-  version "0.1.1"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ata" do
   on_macos do
     on_intel do
       url "https://github.com/alexraskin/ata/releases/download/v#{version}/ata_#{version}_darwin_amd64.tar.gz"
-      sha256 "353dc8809da09662e84575f7fba9b14fad24ad0045a36429e5806dd45efac46a"
+      sha256 "cac0124478a160ef7669e53a6423fbc9624c61e2edc179da872b037ec2eb0be5"
     end
     on_arm do
       url "https://github.com/alexraskin/ata/releases/download/v#{version}/ata_#{version}_darwin_arm64.tar.gz"
-      sha256 "a0c8023d88e4a00d7ba1151f4525f5fefc2d1c5ba4028aaa4f1a6214f84c2b36"
+      sha256 "66ad0e0e7c698872c5725dab32e4d3288e8f4569ce6002f6be8f29574d0cfc07"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/alexraskin/ata/releases/download/v#{version}/ata_#{version}_linux_amd64.tar.gz"
-      sha256 "d573ec4661b37cb1d197513f6e0680770b9bc75e3032eb0ce9a9571486a534bc"
+      sha256 "ebed21d65286ffee23980e6222e2d0a6142c4160c81cb86e0fb4d34e67c23336"
     end
     on_arm do
       url "https://github.com/alexraskin/ata/releases/download/v#{version}/ata_#{version}_linux_arm64.tar.gz"
-      sha256 "4a4f88e6774897dbcffa1d428f661ef1b3a1754cd950a372e356a4c224bb7cd3"
+      sha256 "58bc949da42dc31f1a6ea02654856207d9c1ce74eaaccf8e884b343267c9d53b"
     end
   end
 
