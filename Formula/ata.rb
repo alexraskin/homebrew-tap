@@ -5,20 +5,20 @@
 class Ata < Formula
   desc "Ask the Terminal Anything — chat with Claude from your terminal"
   homepage "https://github.com/alexraskin/ata"
-  version "0.1.9"
+  version "0.1.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.9/ata_0.1.9_darwin_amd64.tar.gz"
-      sha256 "835ca9c6e30cd5f1ac7d52719853a5277bf62264e60cb2abb751273babe44343"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.10/ata_0.1.10_darwin_amd64.tar.gz"
+      sha256 "26927bef4b0c5f3f03ef863c3f5c12caa20ead536a43b969489b9899e4c16d49"
 
       define_method(:install) do
         bin.install "ata"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.9/ata_0.1.9_darwin_arm64.tar.gz"
-      sha256 "c680dfc4fb776ee93a623c3f0adfd6f2455cc02a8fa95fd880b63373dfd5725f"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.10/ata_0.1.10_darwin_arm64.tar.gz"
+      sha256 "526be03511ecf4e5e9425aba18b6cda88f5f7facf0aeb9593bc4a56091380018"
 
       define_method(:install) do
         bin.install "ata"
@@ -28,15 +28,15 @@ class Ata < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.9/ata_0.1.9_linux_amd64.tar.gz"
-      sha256 "0f9185e8fdaeeb442aedacf6644fccfd45e5399289277f54fbb2e63bfe0c2b79"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.10/ata_0.1.10_linux_amd64.tar.gz"
+      sha256 "c647e435becd0b7b33ffc067530fefc8eb7ec747c3cd65a53713d1f4848438cd"
       define_method(:install) do
         bin.install "ata"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.9/ata_0.1.9_linux_arm64.tar.gz"
-      sha256 "64d420939fc8a34024fc8ffa8471e9b53d2bd396bec7d9f76e471383a77c7768"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.10/ata_0.1.10_linux_arm64.tar.gz"
+      sha256 "9b92b52526a6537bf6156a84238743a568f3b6d077c23230c031c9351b732635"
       define_method(:install) do
         bin.install "ata"
       end
