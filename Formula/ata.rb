@@ -5,12 +5,12 @@
 class Ata < Formula
   desc "Ask the Terminal Anything — chat with Claude from your terminal"
   homepage "https://github.com/alexraskin/ata"
-  version "0.1.12"
+  version "0.1.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.12/ata_0.1.12_darwin_amd64.tar.gz"
-      sha256 "053a5106e751bf86ef60fb745ae8d09caa69d0c9aeebdf2f1993cf5a14139d9e"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.13/ata_0.1.13_darwin_amd64.tar.gz"
+      sha256 "597f0e4cc02956a26eb150ad5b964c6f99dc57d869eb69c74da5f6ac35c40d88"
 
       define_method(:install) do
         if OS.mac?
@@ -20,8 +20,8 @@ class Ata < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.12/ata_0.1.12_darwin_arm64.tar.gz"
-      sha256 "1181ea98f846298a77bba39eed96842a45a50e27a37696716355e98155a552b7"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.13/ata_0.1.13_darwin_arm64.tar.gz"
+      sha256 "64087f0bea8c487f0572381b15ad3ffa11ce7cb50410336a8f7a14c2a0df458b"
 
       define_method(:install) do
         if OS.mac?
@@ -34,8 +34,8 @@ class Ata < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.12/ata_0.1.12_linux_amd64.tar.gz"
-      sha256 "fdb43499e5a581ac8fdd2ea1b379a660a8acef742aad976c15812effd8624947"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.13/ata_0.1.13_linux_amd64.tar.gz"
+      sha256 "2b5aa6b1c356d49c5d689f8eca801662f183f7412398a3cee6b4b130f690cc20"
       define_method(:install) do
         if OS.mac?
           system "/usr/bin/xattr", "-dr", "com.apple.quarantine", "ata"
@@ -44,8 +44,8 @@ class Ata < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexraskin/ata/releases/download/v0.1.12/ata_0.1.12_linux_arm64.tar.gz"
-      sha256 "27fdb10949cb07b5d307a857998b1f52c9e5212652141907f8e85f91004b856d"
+      url "https://github.com/alexraskin/ata/releases/download/v0.1.13/ata_0.1.13_linux_arm64.tar.gz"
+      sha256 "59e74b976fec0cd90e14a4adef91ec4e7ec9696ed901305fc76eede186ac66c6"
       define_method(:install) do
         if OS.mac?
           system "/usr/bin/xattr", "-dr", "com.apple.quarantine", "ata"
